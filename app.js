@@ -20,7 +20,6 @@ var Newsletter = require('./models/newsletter');
 var Contact = require('./models/contact');
 
 var port = process.env.PORT || 3000;
-var ip = process.env.IP || 'http://localhost';
 
 app.use(helmet());
 app.use(morgan('tiny'));
