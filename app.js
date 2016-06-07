@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 var helmet = require('helmet');
 var morgan = require('morgan');
 
-var mongodb_db_url = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/kde';
+var mongodb_db_url = process.env.MONGOLAB_URI || 'mongodb://kde:kde10@ds025603.mlab.com:25603/heroku_p4cvkbsv';
 
 var mongoose = require('mongoose');
 mongoose.connect(mongodb_db_url);
@@ -19,8 +19,8 @@ db.once('open', function() {
 var Newsletter = require('./models/newsletter');
 var Contact = require('./models/contact');
 
-var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
-var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var port = process.env.PORT || 3000;
+var ip = process.env.IP || 'http://localhost';
 
 app.use(helmet());
 app.use(morgan('tiny'));
