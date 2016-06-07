@@ -4,6 +4,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var helmet = require('helmet');
 var morgan = require('morgan');
+var favicon = require('serve-favicon');
 
 var mongodb_db_url = process.env.MONGOLAB_URI || 'mongodb://kde:kde10@ds025603.mlab.com:25603/heroku_p4cvkbsv';
 
@@ -23,7 +24,7 @@ var port = process.env.PORT || 3000;
 
 app.use(helmet());
 app.use(morgan('tiny'));
-app.use(express.favicon(__dirname + '/favicon.ico'));
+app.use(favicon(__dirname + '/favicon.ico'));
 
 app.use(express.static(__dirname + '/client'));
 app.use(express.static(__dirname + '/node_modules/socket.io-client'));
