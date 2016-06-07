@@ -23,6 +23,7 @@ var port = process.env.PORT || 3000;
 
 app.use(helmet());
 app.use(morgan('tiny'));
+app.use(express.favicon(__dirname + '/favicon.ico'));
 
 app.use(express.static(__dirname + '/client'));
 app.use(express.static(__dirname + '/node_modules/socket.io-client'));
