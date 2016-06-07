@@ -89,6 +89,6 @@ io.on('connection', function(socket){
    });
 });
 
-server.listen(ip, function(){
+server.listen(port, function(){
   console.log("Listening on " +port)
 });
