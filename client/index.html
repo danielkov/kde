@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>KDE Design</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./css/main.css">
+      <script src="/socket.io.js"></script>
+   </head>
+   <body>
+      <div class="logo">
+         KDE
+      </div>
+      <div class="hero" id="hero">
+         <div class="hero-inner">
+            <h1>A vevőid az interneten várnak rád! Te mikor jössz?</h1>
+            <h4>Impozáns, könnyen kezelhető felhasználói felületek, gyorsan, pontosan, precízen.</h4>
+         </div>
+      </div>
+      <div class="dot-container">
+         <div class="dots">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+         </div>
+      </div>
+      <div class="quote">
+         <div class="quote-container fadeIn">
+            <h1>Legyen végre olyan weboldalad amilyet te szeretnél!</h1>
+         </div>
+      </div>
+      <div class="cards">
+         <div class="card">
+            <img src="./img/monitor.svg" alt="" class="fadeIn"/>
+            <h3 class="fadeIn">Reszponzív Dizájn</h3>
+            <p class="fadeIn">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </div>
+         <div class="card">
+            <img src="./img/like.svg" alt="" class="fadeIn"/>
+            <h3 class="fadeIn">Minőségi Kivitelezés</h3>
+            <p class="fadeIn">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </div>
+         <div class="card">
+            <img src="./img/calendar.svg" alt="" class="fadeIn"/>
+            <h3 class="fadeIn">Pontos és Precíz</h3>
+            <p class="fadeIn">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </div>
+         <div class="card">
+            <img src="./img/notes.svg" alt="" class="fadeIn"/>
+            <h3 class="fadeIn">Legújabb Technológiák</h3>
+            <p class="fadeIn">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </div>
+         <div class="card">
+            <img src="./img/wrench.svg" alt="" class="fadeIn"/>
+            <h3 class="fadeIn">Teljesen Igényreszabott</h3>
+            <p class="fadeIn">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </div>
+         <div class="card">
+            <img src="./img/love.svg" alt="" class="fadeIn"/>
+            <h3 class="fadeIn">Elégedettség Garancia</h3>
+            <p class="fadeIn">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+         </div>
+      </div>
+      <div class="contact1">
+         <div class="contact1-container fadeIn">
+            <h1>Van ötleted?</h1>
+            <p>
+               Vedd fel velem a kapcsolatot, már várom, hogy közösen dolgozhassunk!
+            </p>
+            <a href="#" class="cta-button" id="cta">Kapcsolat</a>
+         </div>
+      </div>
+      <div class="contact" id="contactBox">
+         <div class="contact-container">
+            <h2>A Te projekted:</h2>
+            <p>Név: </p><input type="text" id="contactName">
+            <p>E-mail: </p><input type="email" id="contactEmail">
+            <p>Mobil: </p><input type="tel" id="contactTel">
+            <p>
+               A projekted, avagy az általad igényelt, vagy tervezett weboldalról pár szó, összefoglalásként.
+            </p>
+            <textarea rows="8" cols="40" id="contactDetails"></textarea>
+            <p id="contactStatus" style="visibility:hidden">status</p>
+            <input type="button" value="Küldés" id="contactSend" onclick="contact.send()">
+         </div>
+      </div>
+      <div class="introduction">
+         <div class="introduction-container">
+            <img src="./img/pic.jpg" alt="" class="introduction-img fadeIn"/>
+            <h2 class="fadeIn">Kovács Dániel Emőd</h2>
+            <span class="smalltag fadeIn">UI/UX Front-End Designer</span>
+            <blockquote class="fadeIn">
+               Már egészen fiatal koromban elkezdett foglalkoztatni minden, ami a számítógéppel kapcsolatos. Amíg barátaim játékra használták, én folyton próbáltam megérteni a működését. Tanulmányaim elvégzését követően az internet és a webes technológiák területén állapodtam meg. A kihívásoknál már csak az ötletes, ambíciózus projekteket, terveket szeretem jobban. Folyamatosan feszegetem a tudásom korlátait, hiszen ezáltal fejlődök leginkább.
+            </blockquote>
+
+            <p class="fadeIn">
+               Kíváncsisággal várom a te projektedet, és alig várom, hogy elkezdhessünk közösen dolgozni rajta!
+            </p>
+         </div>
+      </div>
+      <div class="newsletter">
+         <div class="newsletter-container">
+            <h2>Tudtad, hogy van egy szuper hírlevelem?</h2>
+            <div class="newsletter-item fadeIn">
+               <p>
+                  Ha még nem iratkoztál fel, ilyenekről maradsz le:
+               </p>
+               <blockquote>
+                  <h3>Random cikk</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </blockquote>
+            </div>
+            <div class="newsletter-item fadeIn">
+               <p>
+                  100%-ban egyedi, hasznos és ingyenes! :)
+               </p>
+               <p>
+                  Iratkozz fel most!
+               </p>
+               <input type="text" placeholder="szuper@kiraly.hu" id="newslMail">
+               <p>
+                  (Opcionális) írd ide a neved, hogy személyesen, neked írhassak:
+               </p>
+               <input type="email" placeholder="Űrninja" id="newslName">
+               <p id="newslStatus" style="visibility:hidden">status</p>
+               <input type="button" value="Feliratkozok!" id="newslSubmit" onclick="newsLetter.send()"/>
+            </div>
+         </div>
+      </div>
+      <div class="services">
+         <div class="services-container">
+            <h1 class="fadeIn">SZOLGÁLTATÁSOK</h1>
+            <h2 class="fadeIn">Landing Page</h2>
+            <div class="service">
+               <h3 class="fadeIn">Kampány Oldal</h3>
+               <p class="fadeIn">
+                  Már van online megjelenésed és csupán egy kisebb-nagyobb kampány oldalt szeretnél elkészíteni, ami egy új terméket, szolgáltatást, esetleg nyereményjátékot mutat be - egy kampány oldal a te céljaidnak megfelelő. Nem tudod pontosan mit akarsz? Nekem rengeteg ötletem van. <a href="#cta">Keress bátran.</a>
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">1-5 nap</span> | Ár: <span class="smalltag">igénytől függ</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Statikus Landing</h3>
+               <p class="fadeIn">
+                  Kisebb cégeknél tipikus, gyors és költséghatékony megoldás az Interneten való megjelenéshez. Egy ilyen "Landing Page" tökéletesen vissza tudja adni a cég imidzsét, és egy egyszerű gyűjtőhelyet szolgáltat a cég Internetes forgalmának.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">1-5 nap</span> | Ár: <span class="smalltag">20-50e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Dinamikus Landing</h3>
+               <p class="fadeIn">
+                  Cégednek, vállalkozásodnak, vagy a személyes online megjelenésednek szüksége van egy méltó weboldalra amelyet igényed szerint alakíthatsz, egyszerűen kezelhetsz és bármikor könnyen bővíthetsz. Alkalmas folyamatosan újuló akciók bemutatására is.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">2-5 nap</span> | Ár: <span class="smalltag">30-70e ft</span>
+               </p>
+            </div>
+            <h2 class="fadeIn">Wordpress Alapú</h2>
+            <div class="service">
+               <h3 class="fadeIn">Egyszerű Blog</h3>
+               <p class="fadeIn">
+                  Te is el szeretnéd indítani saját WordPress alapú blogodat, amellyel gyorsan népszerűsíteni tudod a vállalkozásodat és hatékonyan a keresőmotorok találatainak csúcsára tudod magad tornázni? Rengeteg téma közül választhatsz, akár már egy napon belül használhatod is!
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">1-3 nap</span> | Ár: <span class="smalltag">15-40e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Blog Egyedi Sablonnal</h3>
+               <p>
+                  Amennyiben blogodat egyedi színben és stílussal szeretnéd megjeleníttetni, ez az opció egy teljesen rugalmas és költséghatékony megoldást kínál számodra. Tűnj ki a többiek közül egy teljesen egyedi, igényre szabott WP-alapú bloggal.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">3-7 nap</span> | Ár: <span class="smalltag">50-90e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">WP-alapú Weboldal</h3>
+               <p class="fadeIn">
+                  A WordPress nem csupán blog-motorként használható, hiszen könnyen kezelhetőségének köszönhetően rengeteg nagy cég is erre építi a saját weboldalukat. Ha könnyen kezelhetőség és gyors, költséghatékony megoldás, amit keresel, erről mindenképp érdeklődj!
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">3-7 nap</span> | Ár: <span class="smalltag">25-60e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">WP-alapú Egyedi Weboldal</h3>
+               <p class="fadeIn">
+                  Ha fontos számodra az egyedi megjelenés, vagy már van egy konkrét dizájn terved, de szeretnéd kihasználni a WordPress-alapú weboldalak nyújtotta előnyöket, akkor ezt a lehetőséget pontosan neked találták ki.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">3-7 nap</span> | Ár: <span class="smalltag">50-100e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">WP-alapú Webshop</h3>
+               <p class="fadeIn">
+                  Akár az otthon készített képeslapjaidat szeretnéd hatékonyan forgalmazni, akár a vállalkozásodat szeretnéd a következő szintre emelni - egy WordPress-alapú webshop tökéletes felületet biztosít neked ehhez. Annyi lehetőség van ebben, hogy nem férne ide. <a href="#cta">Érdeklődj itt</a>, további információkért.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">3-7 nap</span> | Ár: <span class="smalltag">50-120e ft</span>
+               </p>
+            </div>
+            <h2 class="fadeIn">Egyedi CMS</h2>
+            <p class="fadeIn">
+               A legújabb webes technológiákon alapuló CMS (Tartalom Kezelő Rendszer)-t úgy állítottam össze, hogy rugalmas és igényre szabott megoldást jelenthessen használói számára. Egy ilyen rendszer előnye abban rejlik, hogy nem egy "előre megtervezett" szisztémát kapunk kézhez, hanem a te igényeidhez mérten építem fel.
+            </p>
+            <div class="service">
+               <h3 class="fadeIn">Kisebb Dinamikus Weboldal</h3>
+               <p class="fadeIn">
+                  Teljesen egyedi, módosítható bemutatkozó oldal, kapcsolat, galéria és természetesen bármi más, a te igényeid szerint. Tökéletes, ahhoz, hogy hatékonyan elindítsd saját, vagy céges internetes megjelenésedet, illetve felfedezd az ebben rejlő lehetőségeket.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">2-5 nap</span> | Ár: <span class="smalltag">50-100e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Céges Dinamikus Weboldal</h3>
+               <p class="fadeIn">
+                  Ezzel a weboldallal már simán versenyre kelhetsz a konkurenciáddal. Ha a méret és a bővíthetőség mellett a sebesség is számít, akkor itt van számodra a tökéletes megoldás. Érdeklődj nálam minél előbb, hogy megtudhasd milyen ajándék szolgáltatásokat kínálok céges dinamikus weboldalad mellé!
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">5-14 nap</span> | Ár: <span class="smalltag">100-300e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Dinamikus Weboldal Egyedi Célra</h3>
+               <p class="fadeIn">
+                  Amennyiben egy zseniális, vagy esetleg őrült terved van, amit mindenképp szeretnél megvalósítani, szívesen állok rendelkezésedre. Például egy kisebb online játék egy termék bemutatására, vagy egy kupon rendszer, esetleg teljesen nyereményjáték webes felülete - kreativitásodra bízom.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">igénytől függ</span> | Ár: <span class="smalltag">igénytől függ</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Egyedi Blog</h3>
+               <p class="fadeIn">
+                  A saját, dinamikus tartalom-kezelő rendszeremre épített egyedi kinézetű blogoddal bárkinek büszkélkedhetsz, de ami még jobb - hogy mivel teljesen egyedileg építem fel, ezért az eddigi blogoknál még nem-látott funkciókkal is kérheted, bővítheted.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">3-14 nap</span> | Ár: <span class="smalltag">80-200e ft</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Egyedi Webshop</h3>
+               <p class="fadeIn">
+                  Teljesen személyre szabott - vallalkozásodnak teljes mértékben megfelelő, villámgyors webes technológiákon alapuló webshop rendszer kiépítése, amellyel garantáltan elkápráztatod vevőidet és számodra egyszerűbbé teszi a rendelések kezelését.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">7-30 nap</span> | Ár: <span class="smalltag">180-500e ft</span>
+               </p>
+            </div>
+            <h2 class="fadeIn">Egyéb</h2>
+            <div class="service">
+               <h3 class="fadeIn">Ingyenes Konzultáció</h3>
+               <p class="fadeIn">
+                  Szolgáltatásaim bármelyikének megrendelésével automatikusan igénybe veheted ingyenes konzultációmat is, melynek során részletesen megtárgyaljuk igényeidet, és az ennek megfelelő megoldások kidolgozásához szükséges stratégiát.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">1 nap</span> | Ár: <span class="smalltag">ingyenes!</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">Webes Alkalmazás Építése</h3>
+               <p class="fadeIn">
+                  Egyedi weboldalakhoz hasonlóan arra is van lehetőséged, hogy egy nagyobb projekt keretein belül egy saját webes alkalmazást rendelj. Ezeknek az alkalmazásoknak az integrálása mindenféle környezetbe (Android, iOS, Windows, stb...) is természetesen lehetséges.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">igénytől függ</span> | Ár: <span class="smalltag">igénytől függ</span>
+               </p>
+            </div>
+            <div class="service">
+               <h3 class="fadeIn">API Építés</h3>
+               <p class="fadeIn">
+                  Egy API (Application Programming Interface, avagy Alkalmazás Programozói Felület), egy olyan interakciókból álló program, amelyre gyorsan és könnyedén lehet felhasználói felületet készíteni. Ezek kifejezetten hasznosak adatbázisok esetében.
+               </p>
+               <p class="fadeIn">
+                  Elkészítési idő: <span class="smalltag">2-14 nap</span> | Ár: <span class="smalltag">igénytől függ</span>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="body-logo">
+         <div class="logo-inv">
+            KDE
+         </div>
+      </div>
+      <div class="footer">
+         <p>
+            &copy; KDE Design 2016
+         </p>
+         <h2>SZOCIÁLIS MÉDIA</h2>
+         <nav>
+            <a href="#" class="social fb">f</a>
+            <a href="#" class="social tw">t</a>
+            <a href="#" class="social in">i</a>
+            <a href="#" class="social dr">d</a>
+            <a href="#" class="social li">l</a>
+         </nav>
+         <h2>KAPCSOLAT</h2>
+         <ul class="contact-list">
+            <li>
+               Mobil: +36/30-968-9547
+            </li>
+            <li>
+               E-mail: danielk@kde.hu
+            </li>
+         </ul>
+      </div>
+      <script src="./js/main.js"></script>
+      <script src="./js/connection.js"></script>
+   </body>
+</html>

@@ -1,0 +1,462 @@
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);*/
+
+@font-face {
+   font-family: Raleway;
+   src: url(../fonts/raleway.regular.ttf);
+}
+
+@keyframes fadeIn{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+.fadeIn{
+   opacity: 0;
+}
+
+.fadedIn{
+   animation: fadeIn 0.5s ease-in 0s 1;
+}
+
+
+
+.logo, .logo-inv{
+   font-size: 24px;
+   width: 60px;
+   max-height: 60px;
+   padding: 15px 0;
+   border-radius: 35px;
+   text-align: center;
+}
+.logo{
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   color: #f8f8f8;
+   background: #033550;
+   border: 3px solid #f8f8f8;
+   box-shadow: 0px 0px 0px 3px #033550;
+}
+.logo-inv{
+   border: 3px solid #f8f8f8;
+   box-shadow: 0px 0px 0px 3px #011520, 0px 0px 0px 6px #f8f8f8, 0px 0px 0px 9px #011520;
+   color: #f8f8f8;
+   display: block;
+   margin: 0 auto;
+   position: absolute;
+   left: 0;
+   right: 0;
+}
+blockquote{
+   border-left: 4px solid #033550;
+   padding-left: 10px;
+   text-align: justify;
+}
+img{
+   max-width: 100%;
+}
+.hero, .dots{
+   position: relative;
+}
+.dot-container{
+   position:relative;
+}
+*{
+   font-family: 'Raleway',sans-serif;
+   font-weight: 200;
+   -webkit-font-smoothing: antialiased;
+   transition: 0.3s;
+}
+body{
+   background:#f8f8ff;
+   color: #011520;
+   max-width: 100%;
+   margin: 0;
+}
+h1{font-size:2em;}
+em{
+   font-style: normal;
+   font-weight: bold;
+}
+.hero > *{
+   text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+}
+h4{
+   color: #000F18;
+}
+.hero-inner{
+   text-align: center;
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
+   height: 122px;
+}
+.dots{
+   display: block;
+   position: absolute;
+   right: 0;
+   bottom: 20px;
+   left: 0;
+   margin: auto;
+   height: 25px;
+   width: 130px;
+}
+.dot1, .dot2, .dot3{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   margin: 0 10px;
+   border-radius: 10px;
+   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
+}
+.dot1{
+   background:#033550;
+}
+.dot2{
+   background:#355D72;
+}
+.dot3{
+   background:#678596;
+}
+.quote, .newsletter{
+   display: block;
+   width: 100%;
+   padding: 30px 0;
+   box-shadow: inset 0px 8px 8px -4px rgba(0,0,0,0.15), inset 0px -8px 8px -4px rgba(0,0,0,0.15);
+}
+.quote, .newsletter{
+   background: #678596;
+   color: #f8f8f8;
+}
+.contact1{
+   background: #dd9600;
+   color: #f8f8f8;
+   position: relative;
+   padding: 30px 0;
+   border-bottom: 4px solid #f8f8f8;
+   box-shadow: inset 0px 8px 8px -4px rgba(0,0,0,0.15);
+}
+.introduction{
+   padding: 30px 0;
+}
+.introduction-container{
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0 5px;
+   text-align: center;
+}
+.smalltag{
+   font-size: 14px;
+   color: #666;
+}
+.quote-container, .contact1-container{
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 5px;
+   position: relative;
+}
+.quote-container h1, .contact1-container h1{
+   text-align: center;
+   text-shadow: 0px 0px 2px rgba(0,0,0,0.4)
+   white-space:nowrap;
+}
+.contact1-container p{
+   text-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+   text-align: center;
+}
+.introduction-img{
+   width: 150px;
+   border-radius: 100px;
+   border: 3px solid transparent;
+   box-shadow: 0px 0px 0px 3px #033550;
+}
+.cta-button{
+   text-decoration: none;
+   font-size: 24px;
+   color: #f8f8f8;
+   border-radius: 10px;
+   display: block;
+   text-align: center;
+   position: relative;
+}
+.cta-button:hover{
+   color: white;
+}
+.cards{
+   max-width: 1060px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px 0;
+}
+.card{
+   display: block;
+   width: calc(100% - 10px);
+   margin: 0 5px;
+}
+.card h3{
+   text-align: center
+}
+.card p{
+   text-align: justify;
+}
+.card img{
+   max-width: 35%;
+   display: block;
+   margin: 0 auto;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea{
+   border-radius: 4px;
+   border: 1px solid #999;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus{
+   outline: none;
+   border-top: 1px solid #033550;
+   border-bottom: 1px solid #033550;
+}
+
+input, button{
+   width: 95%;
+   font-size: 22px;
+   padding: 6px 4px;
+}
+button:focus, a:focus{
+   outline: none;
+}
+.newsletter input[type=button]{
+   border: 1px solid #f8f8f8;
+   background: #dd9600;
+   color: #f8f8f8;
+}
+.newsletter input[type=button]:hover{
+   background: #eea600;
+}
+.newsletter-item{
+   text-align: center;
+}
+.newsletter-container{
+   text-align: center;
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+}
+.body-logo{
+   background: #011520;
+   margin-top: 30px;
+   height: 66px;
+}
+.footer{
+   background: #8795a6;
+   padding: 30px 0;
+   text-align: center;
+}
+.footer p{
+   margin: 0;
+}
+.social{
+   text-decoration: none;
+   font-size: 24px;
+   padding: 5px;
+   margin: 5px;
+   border: 1px solid #8795a6;
+   color: #8795a6;
+   box-shadow: 0px 0px 0px 2px #011520;
+   background: #011520;
+   border-radius: 20px;
+   width: 30px;
+   display: inline-block;
+}
+.social:hover{
+   border: 1px solid #f8f8f8;
+   color: #f8f8f8;
+}
+.fb, .tw, .in, .dr, .li{
+   position: relative;
+}
+.fb:before, .tw:before, .li:before, .dr:before, .in:before{
+   position: absolute;
+   font-size: 16px;
+   top: -34px;
+   left: -27px;
+   border: 1px solid rgba(255,255,255,0.6);
+   padding: 4px 10px;
+   border-radius: 5px;
+   background: rgba(0,0,60,0.5);
+   transition: 0.3s;
+   opacity: 0;
+}
+.fb:before{
+   content: 'Facebook';
+}
+.tw:before{
+   content: 'Twitter';
+   left: -20px;
+}
+.li:before{
+   content: 'LinkedIn';
+}
+.dr:before{
+   content: 'Dribbble';
+}
+.in:before{
+   content: 'Instagram';
+}
+.fb:hover:before, .tw:hover:before, .li:hover:before, .dr:hover:before, .in:hover:before{
+   transition: 0.3s;
+   opacity: 1;
+}
+.contact-list{
+   list-style: none;
+   text-align: center;
+   padding: 0;
+}
+.contact-list li{
+   margin: 10px 0;
+}
+.contact-container{
+   text-align: center;
+   width: 100%;
+   max-width: 500px;
+   margin: 0 auto;
+}
+.contact-container input{
+   width: 100%;
+   font-size: 20px;
+}
+.contact-container img{
+
+}
+.contact{
+   background: #F3C04C;
+   padding: 20px 0;
+}
+textarea{
+   width: 100%;
+   resize: none;
+   font-size: 20px;
+}
+.down-arrow:after, .down-arrow:before {
+	top: calc(100% + 30px);
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.down-arrow:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #dd9600;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.down-arrow:before {
+	border-color: rgba(162, 239, 245, 0);
+	border-top-color: #f8f8f8;
+	border-width: 36px;
+	margin-left: -36px;
+}
+.services{
+   margin: 30px 0;
+}
+.services-container{
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 10px;
+}
+.service{
+   display: block;
+   width: 100%;
+   max-width: 300px;
+   margin: auto;
+}
+.service h3{
+   text-align: center;
+}
+.service p{
+   text-align: justify;
+}
+.services h1, .services h2{
+   text-align: center;
+}
+.services-container > p{
+   text-align: center;
+}
+/*
+()()    ()()    ()()()()      ()      ()  ()
+()  ()  ()  ()  ()           ()()     () ()
+()()    ()()    ()()()      ()  ()    ()()
+()  ()  () ()   ()         () () ()   () ()
+()()    ()  ()  ()()()()  ()      ()  ()  ()
+*/
+
+@media screen and (min-width: 560px){
+   .card{
+      width: calc(50% - 10px);
+      float: left;
+   }
+   .cards:before, .cards:after, .services-container:before, .services-container:after{
+      content: " ";
+      display:table;
+   }
+   .cards:after, .services-container:after{
+      clear:both;
+   }
+}
+@media screen and (min-width: 800px){
+   .card{
+      width: calc(33% - 20px);
+      float: left;
+      margin-right: 20px;
+   }
+   .card:nth-of-type(3n+0){
+      margin-right: 0px;
+   }
+}
+@media screen and (min-width: 640px){
+   .newsletter-item{
+      width: calc(50% - 10px);
+      float: left;
+      margin-right: 5px;
+      margin-left: 5px;
+   }
+   .newsletter-container:before, .newsletter-container:after{
+      content: " ";
+      display: table;
+   }
+   .newsletter-container:after{
+      clear: both;
+   }
+   .service{
+      max-width: 100%;
+      width: calc(50% - 20px);
+      float: left;
+      margin: auto 10px;
+   }
+   .service:nth-of-type(3), .service:nth-of-type(8), .service:nth-of-type(13), .service:nth-of-type(16){
+      margin: 20px auto;
+      float: none;
+      clear: both;
+   }
+}
+/*      ___________________________
+  0 0  |  Hát te mit keresel itt?  |
+ (°,°) |/--------------------------
+()   ()
+ ( | )
+  ˘ ˘
+*/
