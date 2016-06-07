@@ -90,6 +90,6 @@ io.on('connection', function(socket){
    });
 });
 
-server.listen(server_port, server_ip_address, function(){
-  console.log("Listening on " + server_ip_address + ", server_port " + server_port)
+server.listen(port, ip, function(){
+  console.log("Listening on " + ip + ", server_port " + port)
 });
